@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, #c850c0 0%, #ff6b6b 50%, #4158d0 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  background-color: #010101af;
+  width: 130%;
+  max-width: 420px;
+  aspect-ratio: 5/8; 
+  border: 2px solid #000;
+  border-radius: 50px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.display {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  color: #101011;
+  font-size: 1.8rem;
+  border-radius: 40px;
+  border: 1px solid #000;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 110%;
+  flex: 1;
+}
+
+
+.btn {
+  background: palevioletred;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 20px;
+  border: none;
+  border-radius: 100%;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background: #efeeee;
+  color: #010101;
+  transform: scale(0.95);
+}
+
+.Clear {
+  grid-column: 1 / span 2;
+}
+.Del {
+  grid-column: 3 / span 2;
+}
+
+.highlight {
+  background: #f6f3f3;
+  color: #0e0d0d;
+  font-size: 1rem;
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .display {
+    font-size: 1.5rem;
+  }
+}
